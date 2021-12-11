@@ -1,0 +1,170 @@
+.navbar::after {
+    right: auto;
+    left: 0;
+    transform: skewX(28deg);
+    transform-origin: bottom left;
+}
+
+.navbar a::after {
+    right: 0;
+    left: auto;
+}
+
+.main-slider .carousel-caption {
+    right: 8rem;
+    left: auto;
+}
+
+.main-slider .carousel-indicators {
+    right: 2rem;
+    left: auto;
+}
+
+.about-us img {
+    right: 0;
+    left: auto;
+    transform: none;
+}
+
+.main-slider .carousel-item>img {
+    transform: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    transform: scaleX(1) translateY(-50%);
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    right: -3rem;
+    left: auto;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    left: -3rem;
+    right: auto;
+}
+
+.last-slider .carousel-control-next,
+.last-slider .carousel-control-prev {
+    transform: none;
+}
+
+.last-slider .carousel-control-prev {
+    right: -3.5rem;
+    left: auto;
+}
+
+.last-slider .carousel-control-next {
+    left: -3.5rem;
+    right: auto;
+}
+
+.about-tab::after {
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, .1);
+    transform-origin: top right;
+}
+
+.scrollTop-btn {
+    left: 2.5rem;
+    right: auto;
+}
+
+.primo-erp img {
+    transform: none;
+}
+
+.primo-list .item-img:nth-child(2n) img {
+    float: left;
+}
+
+.contact-form .box {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.social-links-list li i {
+    left: 1rem;
+    right: auto;
+}
+
+.questions li i,
+.contact-banner img {
+    transform: none;
+}
+
+.label {
+    right: 0;
+    left: auto;
+}
+
+.label::after {
+    transform-origin: top right;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.follow-us {
+    right: 0;
+    left: auto;
+}
+
+.contact-line::after {
+    transform-origin: top right;
+}
+
+.form-pricing .form-control {
+    text-align: right;
+}
+
+.form-pricing h3>i,
+.request-support-chat h3>i {
+    transform: scaleX(-1);
+}
+
+.chat-box .mess p::after {
+    right: auto;
+    left: -7px;
+}
+
+.chat-box .mess-r p::after {
+    left: auto;
+    right: -7px;
+}
+
+@media (min-width: 768px) {
+    .pricing .primo-banner img {
+        object-position: left;
+    }
+}
+
+
+/* Change the direction of the transition. */
+
+@media (max-width: 991.98px) {
+    .last-slider .carousel-control-prev {
+        right: .8rem;
+    }
+    .last-slider .carousel-control-next {
+        left: .8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-slider .carousel-caption {
+        right: 3rem;
+    }
+    .main-slider .carousel-indicators {
+        right: 1rem;
+    }
+    .last-slider .carousel-control-prev {
+        right: .8rem;
+    }
+    .last-slider .carousel-control-next {
+        left: .8rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-slider .carousel-caption {
+        right: 1rem;
+    }
+}
