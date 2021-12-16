@@ -1513,6 +1513,9 @@ footer li a:hover {
         animation-name: none !important;
         visibility: visible !important;
     }
+    .primo-list .row:nth-child(2n){
+        flex-direction: column-reverse;
+    }
 }
 
 
