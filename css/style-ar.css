@@ -164,7 +164,8 @@
 }
 
 @media (max-width: 575.98px) {
-    .main-slider .carousel-caption {
-        right: 1rem;
+    .scrollTop-btn {
+        right: auto;
+        left: 1.5rem;
     }
 }

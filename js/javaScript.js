@@ -10,8 +10,9 @@ $(document).ready(function() {
     $('body').css({ "padding-top": headerHeight + navbarHeight });
 
     $(window).scroll(function() {
+        var windowSize = $(window).width();
         var scroll = $(window).scrollTop();
-        if (scroll > 48) {
+        if (scroll > 48 && windowSize > 767) {
             $(".navbar").css({ "top": "0" });
         } else {
             $(".navbar").css({ "top": "55px" });

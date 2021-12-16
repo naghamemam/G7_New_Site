@@ -28,12 +28,10 @@
 body {
     overflow-x: hidden;
 }
-
 body,
 * {
     font-family: var(--main-font);
 }
-
 .top-bar {
     background: var(--dark-color);
     height: 55px;
@@ -42,12 +40,11 @@ body,
     width: 100%;
     color: #fff;
     font-size: .83rem;
+    z-index: 100;
 }
-
 .top-bar .row {
     height: 55px;
 }
-
 .top-bar .list-group-item,
 .social-links .list-group-item {
     background: none;
@@ -1449,15 +1446,14 @@ footer li a:hover {
     .last-slider .carousel-control-next {
         right: .8rem;
     }
-    .item-img {
-        display: none;
-    }
-    .primo-list .row {
-        border-bottom: 1px solid #eee;
-        margin-bottom: 1rem;
-    }
-    .primo-list .row:last-child {
-        border-bottom: none;
+    .primo-list .row{ border-bottom: 1px solid #eee; padding: 1rem 0;}
+    .primo-list .row:last-child{border-bottom:none;}
+    .primo-banner img{ width: 100% !important;}
+    .primo-banner{ margin-top: 1rem;}
+    .primo-list .row img{
+        margin: 1rem auto;
+        width: 250px;
+        float: none !important;
     }
     .item-description {
         overflow: initial;
@@ -1529,23 +1525,25 @@ footer li a:hover {
     .contact-info ul {
         gap: 20px;
     }
-    .main-slider .carousel .carousel-item,
-    .last-slider .carousel .carousel-item {
-        height: 290px;
-    }
+    .main-slider .carousel .carousel-item,.last-slider .carousel .carousel-item{ height: 290px;}
+    .main-slider .carousel-item>img {object-position: left;object-fit: cover;}
     .main-slider .carousel-caption {
-        width: 200px;
-        left: 1rem;
+        width: 100%;
+        background: rgba(255,255,255,.95);
+        left: 0 !important;
+        right: 0 !important;
+        top: auto !important;
+        bottom: 0;
+        transform: none;
+        padding: 15px 15px 30px 15px;
     }
-    .main-slider .carousel-caption h1 {
-        font-size: 1.1rem;
-    }
-    .main-slider .carousel-caption p {
-        font-size: .95rem;
-    }
-    .main-slider .carousel-indicators {
-        top: auto;
-        bottom: 30px;
+    .main-slider .carousel-caption h1 { font-size: 1.1rem; margin-bottom: .5rem !important;}
+    .main-slider .carousel-caption p { font-size: .95rem; margin-bottom: .5rem;}
+    .main-slider .carousel-indicators { 
+        top: auto; 
+        bottom:8px; 
+        left: 0 !important;
+        right: 0 !important;
         flex-direction: row;
     }
     .our-customers .container {
@@ -1614,5 +1612,12 @@ footer li a:hover {
     }
     .about-video {
         height: 270px;
+    }
+    .scrollTop-btn {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 64px;
+        height: 64px;
+        font-size: 0.85rem;
     }
 }
